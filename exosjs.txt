@@ -1,0 +1,89 @@
+/*
+Exercice 1:
+Implémentez la méthode findSmallestInterval(numbers) qui retourne le plus petit intervalle posotof entre deux éléments du tableau numbers.
+
+Par exemple si on considère le tableau [1 6 4 8 3], le plus petit intervalle est 1 (différence entre 2 et 1).
+
+Contraintes:
+	- numbers contient au moins deux éléments et au maximum 100 000 éléments
+	- la solution qui privilégie la vitesse d'éxécution pour les tableaux de grandes taille obtiendra le plus de points.
+	- La différence entre deux éléments ne dépassera jamais la capacité d'un entier pour votre langage.
+*/
+
+/*
+Exercice 2
+On considère la suite de nombres dans laquelle un nombre est suivi du même nombre plus la somme de ces chiffres.
+
+Par exemple 34 est suivi de 41 (41 = 34 + (3 + 4)), 41 est lui-même suivi de 46 (46 = 41 + (4 + 1)).
+
+Deux séquences avec des points de départ différents peuvent finir par se rejoindre. Par exemple la séquence qui commence à 471 et la séquence qui commence à 480 partagent le nombre 519 (le point de jointure). Bien évidemment après le point de jointure, les séquences sont identiques.
+
+Implémenter la méthode computePoint(int s1, int s2) qui prend les points de départ de deux séquences et renvoie le point de jointure de ces deux séquences.
+
+Contraintes:
+	- les deux séquences se rejoignent toujours
+	- 0 < s1, s2 < 200000000
+	- 0 < joint point < 200000000
+*/
+
+/*
+Exercice 3:
+Écrivez une fonction « partition » qui prend un paramètre « liste » et un paramètre « taille » et retourne une liste de sous liste, où chaque sous liste a au maximum « taille » éléments.
+Exemples d'entrées et sorties :
+
+partition([1,2,3,4,5], 2) retourne: [ [1,2], [3,4], [5] ]
+partition([1,2,3,4,5], 3) retourne: [ [1,2,3], [4,5] ]
+partition([1,2,3,4,5], 1) retourne: [ [1], [2], [3], [4], [5] ]
+
+*/
+
+
+
+/* Execice 4:
+Parmis les propositions suivantes, laquelle affiche 2?
+1. myJson->cities->Laos->pop
+2. myJson.cities[0].pop
+3. myJson.cities["Paris"]["pop"]
+4. myJson.cities.Paris.pop
+*/
+const myJson = {
+	"cities": [
+		{"name": "Paris", "pop": 2},
+		{"name": "London", "pop": 8},
+		{"name": "New York", "pop": 9},
+	]
+}
+
+/* Exercice 5:
+Implémentez la fonction average(table).
+
+La fonction doit renvoyer la valeur moyenne du tableau table donné en paramètre. tables est toujours un tableau défini et ne contient que des nombres.
+
+average doit retourner 0 si table est vide.
+*/
+
+/* Exercice 6:
+Implémentez la fonction calc(array, n1, n2).
+
+array est un tableau d'entiers. Les paramètres n1 et n2 sont des entiers définis par la relation 0 <= n1 <= n2 < array.length.
+
+La fonction calc doit retourner la somme des entiers de array dont l'index appartient à l'intervalle [n1; n2].
+*/
+
+/* Exercice 7:
+a(i, j) devrait retourner true si au moins un des arguments est égal à 1 ou si leur comme est égale à 1.
+
+les deux arguments donnés seront toujours des nombres.
+
+Par exemple:
+a(1, 5) retourne true
+a(2, 3) retourne false
+a(-3, 4) retourne true
+*/
+
+/* Exercice 8:
+La méthode sumRange devrait retourner la somme des entiers compris entre 10 et 100 inclusifs contenus dans le tableau passé entre paramètre.
+
+Exemple: const tab = [1, 20, 3, 10, -2, 100]
+sumRange(tab) retournera 130
+*/
